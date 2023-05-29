@@ -1,4 +1,6 @@
 <p *ngIf="product && product.price > 700">
   <input type="text" id="item-input" #message />
-  <button type="button" (click)="notify.emit(message.value)">Notify me</button>
+  <button type="button" (click)="showNotification(message.value)">
+    Notify me
+  </button>
 </p>
